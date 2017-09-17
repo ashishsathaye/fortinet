@@ -55,12 +55,12 @@ public class LinkedListReverse {
         }
     }
 
-    public static void main(String[] args) {
-        int []a = new int[] {1,2,3,4,5};
-        LinkedListReverse linkedListReverse = new LinkedListReverse();
-        Node head = linkedListReverse.createListFromArray(a);
-        linkedListReverse.printList(head);
-        head = linkedListReverse.reverse(head);
-        linkedListReverse.printList(head);
-    }
+//    public static void main(String[] args) {
+//        int []a = new int[] {1,2,3,4,5};
+//        LinkedListReverse linkedListReverse = new LinkedListReverse();
+//        Node head = linkedListReverse.createListFromArray(a);
+//        linkedListReverse.printList(head);
+//        head = linkedListReverse.reverse(head);
+//        linkedListReverse.printList(head);
+//    }
 }
