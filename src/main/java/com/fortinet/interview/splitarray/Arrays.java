@@ -3,7 +3,7 @@ package com.fortinet.interview.splitarray;
 import java.util.Comparator;
 import java.util.List;
 
-public class Arrays {
+class Arrays {
     static boolean canSplitArray (List<Integer> integers, int noOfSubsets) {
         if (noOfSubsets == 0 || integers == null || integers.isEmpty()) {
             return false;
@@ -20,10 +20,7 @@ public class Arrays {
 
         //Assuming that all integers are positive, sort and check. With negative numbers this conditions could not be true;
         integers.sort(Comparator.naturalOrder());
-        if (integers.get(integers.size() - 1) > sum) {
-            return false;
-        }
-        return splitArray(integers, noOfSubsets, sum);
+        return integers.get(integers.size() - 1) <= sum && splitArray(integers, noOfSubsets, sum);
     }
 
     private static boolean splitArray (List<Integer> integers, int noOfSubsets, int sum) {
