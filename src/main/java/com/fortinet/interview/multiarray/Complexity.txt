@@ -1,0 +1,2 @@
+Time complexity O (n0 * n 1 * n2.... nX) where X is number of dimensions
+Space complexity O (n0 * n 1 * n2.... nX) as element is met atleast once.
