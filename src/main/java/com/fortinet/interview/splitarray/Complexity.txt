@@ -1,0 +1,1 @@
+Time and space complexity are 2 pow n i.e. exponential
