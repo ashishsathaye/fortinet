@@ -1,11 +1,12 @@
 package com.fortinet.interview.splitarray;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ArraysTest {
 
@@ -64,5 +65,29 @@ public class ArraysTest {
         integers.add(5);
         integers.add(6);
         assertFalse (Arrays.canSplitArray(integers, 3));
+    }
+
+    @Test
+    public void testDuplicates() {
+        List<Integer> integers = new ArrayList<>();
+        integers.add(2);
+        integers.add(3);
+        integers.add(4);
+        integers.add(3);
+        integers.add(2);
+        integers.add(4);
+        assertTrue(Arrays.canSplitArray(integers, 3));
+    }
+
+    @Test
+    public void testDuplicates1() {
+        List<Integer> integers = new ArrayList<>();
+        integers.add(2);
+        integers.add(3);
+        integers.add(4);
+        integers.add(3);
+        integers.add(2);
+        integers.add(4);
+        assertTrue(Arrays.canSplitArray(integers, 2));
     }
 }
